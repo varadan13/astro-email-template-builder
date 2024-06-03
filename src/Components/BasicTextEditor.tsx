@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import Editor from "react-simple-wysiwyg";
 
 const BasicTextEditor = () => {
   const [html, setHtml] = useState("");
-
+  const createTemplateBtn = useRef();
   const url = `/compile-template?html=${encodeURIComponent(btoa(html))}`;
 
   useEffect(() => {
-    fetch(url);
+    htmx.process(createTemplateBtn.current);
   }, [url]);
 
   return (
@@ -21,7 +21,9 @@ const BasicTextEditor = () => {
       />
 
       <button
+        ref={createTemplateBtn}
         hx-get={url}
+        id="create-template-btn"
         hx-target="#compiled-template-html-content"
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold my-5 py-4 px-4 rounded w-half">
         Create Template

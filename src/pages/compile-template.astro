@@ -1,0 +1,38 @@
+---
+import basic from "../templates/basic";
+const html = Astro.url.searchParams.get("html") || "";
+const content = basic.replace("{{ENTER_HERE}}", decodeURIComponent(html));
+---
+
+<div class="w-full">
+  <textarea
+    class="w-full"
+    style="height: 400px"
+    id="compile-template"
+    name="compile-template-text"
+  >
+    {content}
+  </textarea>
+</div>
+<button
+  class="bg-blue-500 hover:bg-blue-700 text-white font-bold my-5 py-4 px-4 rounded w-half"
+  id="download-button"
+>
+  Download Template
+</button>
+<script>
+  const downloadButton = document.getElementById("download-button");
+  const compileTemplate: any = document.getElementById("compile-template");
+  downloadButton.addEventListener("click", () => {
+    const content = compileTemplate?.value;
+    const blob = new Blob([content], { type: "text/html" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "template.html";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  });
+</script>

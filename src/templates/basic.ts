@@ -1,4 +1,6 @@
-export default `<html
+export default `
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html
   data-editor-version="2"
   class="sg-campaigns"
   xmlns="http://www.w3.org/1999/xhtml"
@@ -40,30 +42,101 @@ export default `<html
       </style>
     <![endif]-->
     <style type="text/css">
-      body, p, div { font-family: inherit; font-size: 14px; } body { color:
-      #000000; } body a { color: #1188e6; text-decoration: none; } p { margin:
-      0; padding: 0; } table.wrapper { width: 100% !important; table-layout:
-      fixed; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust:
-      100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-      img.max-width { max-width: 100% !important; } .column.of-2 { width: 50%; }
-      .column.of-3 { width: 33.333%; } .column.of-4 { width: 25%; } ul ul ul ul
-      { list-style-type: disc !important; } ol ol { list-style-type: lower-roman
-      !important; } ol ol ol { list-style-type: lower-latin !important; } ol ol
-      ol ol { list-style-type: decimal !important; } @media screen and
-      (max-width: 480px) { .preheader .rightColumnContent, .footer
-      .rightColumnContent { text-align: left !important; } .preheader
-      .rightColumnContent div, .preheader .rightColumnContent span, .footer
-      .rightColumnContent div, .footer .rightColumnContent span { text-align:
-      left !important; } .preheader .rightColumnContent, .preheader
-      .leftColumnContent { font-size: 80% !important; padding: 5px 0; }
-      table.wrapper-mobile { width: 100% !important; table-layout: fixed; }
-      img.max-width { height: auto !important; max-width: 100% !important; }
-      a.bulletproof-button { display: block !important; width: auto !important;
-      font-size: 80%; padding-left: 0 !important; padding-right: 0 !important; }
-      .columns { width: 100% !important; } .column { display: block !important;
-      width: 100% !important; padding-left: 0 !important; padding-right: 0
-      !important; margin-left: 0 !important; margin-right: 0 !important; }
-      .social-icon-column { display: inline-block !important; } }
+      body,
+      p,
+      div {
+        font-family: inherit;
+        font-size: 14px;
+      }
+      body {
+        color: #000000;
+      }
+      body a {
+        color: #1188e6;
+        text-decoration: none;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      table.wrapper {
+        width: 100% !important;
+        table-layout: fixed;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      img.max-width {
+        max-width: 100% !important;
+      }
+      .column.of-2 {
+        width: 50%;
+      }
+      .column.of-3 {
+        width: 33.333%;
+      }
+      .column.of-4 {
+        width: 25%;
+      }
+      ul ul ul ul {
+        list-style-type: disc !important;
+      }
+      ol ol {
+        list-style-type: lower-roman !important;
+      }
+      ol ol ol {
+        list-style-type: lower-latin !important;
+      }
+      ol ol ol ol {
+        list-style-type: decimal !important;
+      }
+      @media screen and (max-width: 480px) {
+        .preheader .rightColumnContent,
+        .footer .rightColumnContent {
+          text-align: left !important;
+        }
+        .preheader .rightColumnContent div,
+        .preheader .rightColumnContent span,
+        .footer .rightColumnContent div,
+        .footer .rightColumnContent span {
+          text-align: left !important;
+        }
+        .preheader .rightColumnContent,
+        .preheader .leftColumnContent {
+          font-size: 80% !important;
+          padding: 5px 0;
+        }
+        table.wrapper-mobile {
+          width: 100% !important;
+          table-layout: fixed;
+        }
+        img.max-width {
+          height: auto !important;
+          max-width: 100% !important;
+        }
+        a.bulletproof-button {
+          display: block !important;
+          width: auto !important;
+          font-size: 80%;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .columns {
+          width: 100% !important;
+        }
+        .column {
+          display: block !important;
+          width: 100% !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        .social-icon-column {
+          display: inline-block !important;
+        }
+      }
     </style>
     <!--user entered Head Start-->
     <link
@@ -71,7 +144,9 @@ export default `<html
       rel="stylesheet"
     />
     <style>
-      body { font-family: "Fredoka One", cursive; }
+      body {
+        font-family: "Fredoka One", cursive;
+      }
     </style>
     <!--End Head user entered-->
   </head>
@@ -225,7 +300,7 @@ export default `<html
                                                       >
                                                         <a
                                                           href="http://www.kravein.com.au"
-                                                        ><img
+                                                          ><img
                                                             class="max-width"
                                                             border="0"
                                                             style="
@@ -245,7 +320,7 @@ export default `<html
                                                             data-proportionally-constrained="true"
                                                             data-responsive="true"
                                                             src="http://cdn.mcauto-images-production.sendgrid.net/8740b01413463518/a7058133-8fe2-42ab-8b29-3b1c37b4714a/1600x484.jpg"
-                                                          /></a>
+                                                        /></a>
                                                       </td>
                                                     </tr>
                                                   </tbody>
@@ -344,8 +419,8 @@ export default `<html
                                                                   sans-serif;
                                                                 font-size: 16px;
                                                               "
-                                                            ><strong
-                                                              ></strong></span>
+                                                              ><strong> </strong
+                                                            ></span>
                                                           </div>
                                                           <div></div>
                                                         </div>
@@ -361,46 +436,7 @@ export default `<html
                                     </tr>
                                   </tbody>
                                 </table>
-                                <table
-                                  class="module"
-                                  role="module"
-                                  data-type="text"
-                                  border="0"
-                                  cellpadding="0"
-                                  cellspacing="0"
-                                  width="100%"
-                                  min-height="700px"
-                                  style="table-layout: fixed; min-height: 240px"
-                                  data-muid="0902f2b3-2491-4ed3-9dba-9e6cc3557268"
-                                  data-mc-module-version="2019-10-22"
-                                >
-                                  <tbody>
-                                    <tr>
-                                      <td
-                                        style="
-                                          padding: 18px 0px 18px 18px;
-                                          line-height: 22px;
-                                          text-align: inherit;
-                                        "
-                                        height="100%"
-                                        valign="top"
-                                        bgcolor=""
-                                        role="module-content"
-                                      >
-                                        <div>
-                                          <div
-                                            style="
-                                              font-family: inherit;
-                                              text-align: start;
-                                            "
-                                          >
-                                            {{ENTER_HERE}}
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                                {{ENTER_HERE}}
                               </td>
                             </tr>
                           </table>
@@ -422,7 +458,6 @@ export default `<html
         </table>
       </div>
     </center>
-
   </body>
 </html>
 `;
